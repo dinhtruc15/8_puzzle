@@ -212,7 +212,7 @@ Genetic Algorithm (GA) là một phương pháp mô phỏng quá trình tiến h
 ### So sánh hiệu suất của các thuật toán Local Search
 
 
-#### ![Demo](GIF/hieusuat_local_search.gif)
+#### ![Demo](GIF/hieusuat_lc.gif)
 
 
 ### Nhận xét:
