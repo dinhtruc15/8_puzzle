@@ -162,7 +162,7 @@ Các thuật toán Local Search là những phương pháp tối ưu hóa không
 Hill Climbing là một thuật toán tìm kiếm địa phương đơn giản, luôn di chuyển đến trạng thái láng giềng có giá trị heuristic tốt hơn hiện tại (ví dụ ít ô sai hơn). Quá trình kết thúc khi không còn trạng thái nào tốt hơn, dẫn đến cực đại cục bộ. Trong 8-Puzzle, Hill Climbing dễ bị mắc kẹt nếu cấu hình ban đầu không tốt.
 
 
-####Gif minh họa: ![Demo](GIF/Hill-Climbing.gif)
+#### Gif minh họa: ![Demo](GIF/Hill-Climbing.gif)
 
 
 ### 2.3.2 Steepest Ascent Hill Climbing
