@@ -28,34 +28,16 @@ def manhattan_distance(state, goal):
         distance += abs(goal_idx // 3 - i // 3) + abs(goal_idx % 3 - i % 3)
     return distance
 
-def dfs(start, goal):
-    """Iterative Deepening DFS with threshold heuristic."""
-    def search(path, g, threshold, visited):
-        state = path[-1]
-        f = g + manhattan_distance(state, goal)
-        if f > threshold:
-            return f
+def dfs(start, goal, max_depth=30):
+    stack = [(start, [start])]
+    while stack:
+        state, path = stack.pop()
+        if len(path) > max_depth:
+            continue
         if state == goal:
-            return path  # Solution found
-        min_threshold = float('inf')
+            return path
         for child in get_children(state):
-            if child not in visited:
-                visited.add(child)
-                result = search(path + [child], g + 1, threshold, visited)
-                if isinstance(result, list):  # Solution found
-                    return result
-                min_threshold = min(min_threshold, result)
-                visited.remove(child)  # Allow revisiting with a different path
-        return min_threshold
+            if child not in path:
+                stack.append((child, path + [child]))
+    return None
 
-    threshold = manhattan_distance(start, goal)
-    while True:
-        visited = set([start])
-        result = search([start], 0, threshold, visited)
-        if isinstance(result, list):
-            return result  # Solution found
-        elif result == float('inf'):
-            return None  # No solution possible
-        threshold = result  # Update threshold
-if __name__ == "__main__":
-    print("dfs_al module is working correctly.")

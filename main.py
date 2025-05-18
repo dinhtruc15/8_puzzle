@@ -250,12 +250,12 @@ class PuzzleGUI:
             elif algo == "Sarsa":
                 path = sarsa(initial_state, goal_state)
                 if path is None:
-                  messagebox.showerror("Lỗi", "Không tìm thấy lời giải sau khi học Q-Learning.")
+                  messagebox.showerror("Lỗi", "Không tìm thấy lời giải! Có thể bài toán không khả thi.")
                   return
             elif algo == "Backtracking with Forward Checking":
                 path = backtracking_with_forward_checking(initial_state, goal_state)
                 if path is None:
-                  messagebox.showerror("Lỗi", "Không tìm thấy lời giải sau khi học Q-Learning.")
+                  messagebox.showerror("Lỗi", "Không tìm thấy lời giải! Có thể bài toán không khả thi.")
                   return
             else:
                 messagebox.showerror("Lỗi", "Vui lòng chọn thuật toán hợp lệ!")
