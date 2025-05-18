@@ -1,4 +1,4 @@
-# 8 Puzzle Solver
+# Báo Cáo Đồ án 8 Puzzle Solver
 
 
 ### Sinh viên: Thái Đinh Trúc      
@@ -306,6 +306,8 @@ Phiên bản mở rộng của backtracking, Forward Checking loại bỏ trư�
 
 #### Gif minh họa: ![Demo](GIF/backtracking_with_forward_checking.gif)
 
+
+Thuật toán Backtracking with Forward Checking không ra kết quả với trạng thái ban đầu [2, 6, 5], [0, 8, 7], [4, 3, 1] do không gian tìm kiếm quá lớn và ràng buộc không đủ mạnh để loại trừ hiệu quả các giá trị sai. Tuy nhiên, nếu đổi sang trạng thái đơn giản hơn, thuật toán vẫn có thể giải được vì số bước ít và ít khả năng bị "nghẽn" khi kiểm tra ràng buộc.
 
 
 ### So sánh hiệu suất của các thuật toán CSP
