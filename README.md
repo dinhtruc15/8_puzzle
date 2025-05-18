@@ -212,7 +212,7 @@ Genetic Algorithm (GA) là một phương pháp mô phỏng quá trình tiến h
 ### So sánh hiệu suất của các thuật toán Local Search
 
 
-#### ![Demo](GIF/hieusuat_Loacal_search.gif)
+#### ![Demo](GIF/hieusuat_local_search.gif)
 
 
 ### Nhận xét:
@@ -374,7 +374,7 @@ Do đó, em không thể chạy được kết quả để so sánh hiệu suấ
 # So sánh tổng hợp 
 
 
-Để đánh giá hiệu suất của các thuật toán giải bài toán 8-puzzle, ta sử dụng cùng một trạng thái khởi đầu (ví dụ: [[1, 2, 3], [4, 0, 6], [7, 5, 8]]) và chạy từng thuật toán nhiều lần để lấy kết quả trung bình nếu có yếu tố ngẫu nhiên. Các tiêu chí đánh giá bao gồm thời gian thực thi, số bước đi trong lời giải, số node mở rộng, bộ nhớ sử dụng và tỷ lệ thành công. Kết quả cho thấy, các thuật toán như BFS và UCS đảm bảo tìm lời giải tối ưu về độ dài đường đi và chi phí, tuy nhiên chúng tiêu tốn nhiều bộ nhớ và thời gian xử lý khi không gian trạng thái lớn. DFS nhanh và sử dụng ít bộ nhớ hơn nhưng không đảm bảo tối ưu và dễ bị kẹt trong các nhánh sai, dẫn đến tỷ lệ thành công thấp hơn. IDS kết hợp ưu điểm của BFS và DFS, tiết kiệm bộ nhớ hơn BFS nhưng lại mất thêm thời gian do việc lặp lại duyệt các nút gần gốc. Trong nhóm các thuật toán có thông tin, A* với heuristic Manhattan cho kết quả tốt nhất về cả thời gian và độ dài đường đi, trong khi IDA* tiết kiệm bộ nhớ hơn nhưng thời gian thực thi lâu hơn. Thuật toán Greedy nhanh hơn nhưng không đảm bảo tìm lời giải tối ưu và dễ bị lạc hướng. Các thuật toán local search như Hill Climbing, Simulated Annealing hay Genetic Algorithm phù hợp với không gian tìm kiếm lớn, cho phép tìm lời giải tốt trong thời gian hợp lý nhưng không đảm bảo hội tụ và cần chạy nhiều lần để nâng cao tỷ lệ thành công. Tổng thể, lựa chọn thuật toán phù hợp phụ thuộc vào yêu cầu cân bằng giữa thời gian, bộ nhớ, độ tối ưu lời giải và khả năng hội tụ trong không gian trạng thái cụ thể.
+Để đánh giá hiệu suất của các thuật toán giải bài toán 8-puzzle, ta sử dụng cùng một trạng thái khởi đầu (ví dụ: [[2, 5, 6], [0, 8, 7], [4, 3, 1]]) và chạy từng thuật toán nhiều lần để lấy kết quả trung bình nếu có yếu tố ngẫu nhiên. Các tiêu chí đánh giá bao gồm thời gian thực thi, số bước đi trong lời giải, số node mở rộng, bộ nhớ sử dụng và tỷ lệ thành công. Kết quả cho thấy, các thuật toán như BFS và UCS đảm bảo tìm lời giải tối ưu về độ dài đường đi và chi phí, tuy nhiên chúng tiêu tốn nhiều bộ nhớ và thời gian xử lý khi không gian trạng thái lớn. DFS nhanh và sử dụng ít bộ nhớ hơn nhưng không đảm bảo tối ưu và dễ bị kẹt trong các nhánh sai, dẫn đến tỷ lệ thành công thấp hơn. IDS kết hợp ưu điểm của BFS và DFS, tiết kiệm bộ nhớ hơn BFS nhưng lại mất thêm thời gian do việc lặp lại duyệt các nút gần gốc. Trong nhóm các thuật toán có thông tin, A* với heuristic Manhattan cho kết quả tốt nhất về cả thời gian và độ dài đường đi, trong khi IDA* tiết kiệm bộ nhớ hơn nhưng thời gian thực thi lâu hơn. Thuật toán Greedy nhanh hơn nhưng không đảm bảo tìm lời giải tối ưu và dễ bị lạc hướng. Các thuật toán local search như Hill Climbing, Simulated Annealing hay Genetic Algorithm phù hợp với không gian tìm kiếm lớn, cho phép tìm lời giải tốt trong thời gian hợp lý nhưng không đảm bảo hội tụ và cần chạy nhiều lần để nâng cao tỷ lệ thành công. Tổng thể, lựa chọn thuật toán phù hợp phụ thuộc vào yêu cầu cân bằng giữa thời gian, bộ nhớ, độ tối ưu lời giải và khả năng hội tụ trong không gian trạng thái cụ thể.
 
 
 # 3. Kết luận 
